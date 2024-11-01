@@ -44,7 +44,6 @@ export class TicketClient extends SapphireClient {
 
   public init(config: any) {
     container.config = config
-    // container.prisma = new PrismaClient({ datasourceUrl: config.dbUrl })
   }
 
   public override get guild() {

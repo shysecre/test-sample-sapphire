@@ -1,11 +1,11 @@
 import type Redis from "ioredis"
-import type { PrismaClient } from "@prisma/client"
+// import type { PrismaClient } from "@prisma/client"
 // import type { IConfig } from "@yume/common"
 
 declare module "@sapphire/pieces" {
   interface Container {
     redis: Redis
-    prisma: PrismaClient
+    // prisma: PrismaClient
     // config: IConfig
   }
 }

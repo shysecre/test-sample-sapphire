@@ -2,7 +2,7 @@
 import { LogLevel, SapphireClient, container } from "@sapphire/framework"
 import { getRootData } from "@sapphire/pieces"
 import { Time } from "@sapphire/time-utilities"
-import { Collection, GatewayIntentBits, type TextChannel } from "discord.js"
+import { GatewayIntentBits } from "discord.js"
 import { Redis } from "ioredis"
 
 export class EconomyClient extends SapphireClient {
@@ -45,16 +45,10 @@ export class EconomyClient extends SapphireClient {
 
   public init(config: any) {
     container.config = config
-    // container.prisma = new PrismaClient({ datasourceUrl: config.dbUrl })
     container.redis = new Redis(config.redisUrl)
-    container.plantedCurrency = new Collection()
   }
 
   public override get guild() {
     return this.guilds.cache.get(container.config.guildId)
-  }
-
-  public override get mainChannel() {
-    return <TextChannel>this.guild?.channels.cache.get(container.config.channelIds.main)
   }
 }

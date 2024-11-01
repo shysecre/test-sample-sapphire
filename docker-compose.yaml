@@ -1,17 +1,6 @@
 version: "3.8"
 name: test_remastered
 services:
-  # mysql:
-  #   image: mysql
-  #   container_name: test_mysql
-  #   environment:
-  #     - MYSQL_ROOT_PASSWORD=root
-  #     - MYSQL_DATABASE=testdb
-  #   volumes:
-  #     - ./mysql:/var/lib/mysql
-  #   ports:
-  #     - "3306:3306"
-
   redis:
     image: redis:alpine
     container_name: test_redis
@@ -21,5 +10,4 @@ services:
       - ./redis:/data
 
 volumes:
-  # mysql:
   redis:
