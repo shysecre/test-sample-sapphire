@@ -1,0 +1,17 @@
+{
+  "name": "ticket-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc --watch",
+    "start": "node ./build/index.js"
+  },
+  "author": "@shysecre",
+  "license": "ISC",
+  "type": "commonjs",
+  "main": "./build/index.js",
+  "dependencies": {
+    "@yume/common": "workspace:^",
+    "@yume/sapphire-utilities": "workspace:^"
+  }
+}

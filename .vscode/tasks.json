@@ -1,0 +1,89 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch:all",
+      "dependsOn": [
+        "watch:yume",
+        "watch:ticket",
+        "watch:event",
+        "watch:economy",
+        "watch:sapphire-utilities",
+        "watch:common"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "watch:yume",
+      "type": "shell",
+      "command": "pnpm yume:watch",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true,
+        "group": "shared"
+      },
+      "hide": true
+    },
+    {
+      "label": "watch:ticket",
+      "type": "shell",
+      "command": "pnpm ticket:watch",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true,
+        "group": "shared"
+      },
+      "hide": true
+    },
+    {
+      "label": "watch:economy",
+      "type": "shell",
+      "command": "pnpm economy:watch",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true,
+        "group": "shared"
+      },
+      "hide": true
+    },
+    {
+      "label": "watch:event",
+      "type": "shell",
+      "command": "pnpm event:watch",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true,
+        "group": "shared"
+      },
+      "hide": true
+    },
+    {
+      "label": "watch:common",
+      "type": "shell",
+      "command": "pnpm common:watch",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true,
+        "group": "shared-packages"
+      },
+      "hide": true
+    },
+    {
+      "label": "watch:sapphire-utilities",
+      "type": "shell",
+      "command": "pnpm sapphire-utilities:watch",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true,
+        "group": "shared-packages"
+      },
+      "hide": true
+    }
+  ]
+}

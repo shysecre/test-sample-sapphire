@@ -1,0 +1,16 @@
+{
+  "tokens": {
+    "yume": "",
+    "ticket": "",
+    "economy": "",
+    "events": ""
+  },
+  "NODE_ENV": "dev",
+  "enable_verification": false,
+  "prefix": "!",
+  "owners": ["303273346009923586"],
+  "dbUrl": "mysql://root:root@localhost:3306/testdb",
+  "redisUrl": "redis://localhost:6379",
+  "guildId": "1036695443414990918",
+  "ignoreBots": ["768375377495719947", "1191781383702577232"]
+}

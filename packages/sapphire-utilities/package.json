@@ -1,0 +1,25 @@
+{
+  "name": "@yume/sapphire-utilities",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc --watch"
+  },
+  "author": "@shysecre",
+  "license": "ISC",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./build/index.js",
+      "types": "./build/index.d.ts"
+    },
+    "./register": {
+      "default": "./build/register.js",
+      "types": "./build/register.d.ts"
+    }
+  },
+  "dependencies": {
+    "@yume/common": "workspace:^"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@yume/common",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc --watch"
+  },
+  "author": "@shysecre",
+  "license": "ISC",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./build/index.js",
+      "types": "./build/index.d.ts"
+    },
+    "./setup": {
+      "default": "./build/util/setup.js",
+      "types": "./build/util/setup.d.ts"
+    }
+  }
+}
